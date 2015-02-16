@@ -13,7 +13,7 @@
     <string name="AppId">737668099616024</string> <!-- 937150796301913 -->
     <!-- <string name="MapApi">AIzaSyDg6qHFiMk1hTfWg8A8cNo414lv0bdfyZ4</string>			//Client Credentials key -->
 
-    <string name="MapApi">AIzaSyDnkkTnczE1uwSZuGs0nykeliDZH03so6E</string> <!-- //My Credentials key -->
+    <string name="MapApi">AIzaSyCYnbozHEIYc9DltbdhpYgZ_aUNwIcijfk</string> <!-- //My Credentials key -->
     <!-- qq7902  AIzaSyDWSwSdsF74GaPT6Eh_-r1lLL10KYPxV-I -->
     <string name="EshantPC_MapApi">AIzaSyDz8QVh0C8uthWwCfpmBN7ktY2FcH8RPR8</string>
     <string name="LiveMapApi">AIzaSyDtZ7chuhubEUF06hHlxbCCRqcVi5hyjLE</string>

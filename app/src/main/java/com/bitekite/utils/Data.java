@@ -126,7 +126,8 @@ public static String flurryKey="MD363FWG3NPPFY5GVBP4";
 	public static final String ZIPI="zipi";
 	
 	public static String ESTIMATED_TIME = "estimated_time";
-	public static String customer_estimate_time="customer_estimate_time";
+	public static String  customer_estimate_time="20";
+
 	
 	
 	public static String S_PH_NO = "";

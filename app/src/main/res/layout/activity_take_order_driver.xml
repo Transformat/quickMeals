@@ -30,10 +30,10 @@
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="239px"
-            android:layout_height="27px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:background="@drawable/bitekite" />
+            android:background="@drawable/payment_screen_logo" />
     </RelativeLayout>
 
     <RelativeLayout

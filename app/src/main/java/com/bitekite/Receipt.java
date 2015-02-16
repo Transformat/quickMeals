@@ -438,7 +438,8 @@ public class Receipt extends Activity {
 											"Rating_meals", "");
 									Data.saveInfoOf(getApplicationContext(),
 											Data.customer_estimate_time,
-											"customer_estimate_time");
+											"20");
+                                    Data.saveInfoOf(getApplicationContext(), Data.OrderPlacedFlag,"0");
 									Data.oldResponse = "";
 									Intent intent = new Intent(Receipt.this,
 											ListofMeals.class);

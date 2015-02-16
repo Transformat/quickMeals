@@ -835,17 +835,16 @@ public class ListofMeals extends Activity implements PushUpdater {
                     Log.e("estimate time",""+Data.customer_estimate_time);
                     int est = (int) Math.ceil(Integer.parseInt(Data.getInfoOf(
                             getApplicationContext(),
-                            Data.customer_estimate_time)) / 60.0);
+                            Data.customer_estimate_time))/60.0);
                     textViewOrderPlaced
                             .setText("Your server will arrive in "
                                     + est
                                     + " minutes, \nclick here to check your server's location");
                 }
             } else {
+                Log.e("estimate time",""+Data.customer_estimate_time);
                 int est = (int) Math
-                        .ceil(Integer.parseInt(Data.getInfoOf(
-                                getApplicationContext(),
-                                Data.customer_estimate_time)) / 60.0);
+                        .ceil(Integer.parseInt(Data.customer_estimate_time)/60.0);
                 textViewOrderPlaced
                         .setText(" Your server is "
                                 + est
