@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:background="@color/green_bar" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBack"
+            android:layout_width="96px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_btn_selector"
+                android:duplicateParentState="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/topbarTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="RECEIPT"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="1038px"
+        android:layout_below="@+id/topBar"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/FirstView"
+                android:layout_width="match_parent"
+                android:layout_height="751px"
+                android:paddingBottom="10px"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/DateAndTimeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90px"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="sdsddsdsds"
+                    android:textColor="@color/black"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/AmountTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130px"
+                    android:layout_below="@id/DateAndTimeTxt"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="AMOUNT"
+                    android:textColor="@color/black"
+                    android:textSize="76px" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="620px"
+                    android:layout_height="3px"
+                    android:layout_below="@+id/AmountTxt"
+                    android:layout_centerHorizontal="true"
+                    android:background="#E7E9E8" />
+
+                <TextView
+                    android:id="@+id/OrderSimmaryTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:layout_below="@+id/textView1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="O r d e r  S u m m a r y"
+                    android:textColor="@color/black"
+                    android:textSize="33px" />
+
+                <ImageView
+                    android:id="@+id/mealQuntBack"
+                    android:layout_width="448px"
+                    android:layout_height="448px"
+                    android:layout_below="@+id/OrderSimmaryTxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/meal_number_android"
+                    android:tag="mlar" />
+
+                <TextView
+                    android:id="@+id/meals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="520px"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="65px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RatingView"
+                android:layout_width="match_parent"
+                android:layout_height="287px"
+                android:layout_below="@+id/FirstView"
+                android:background="#F9AC18" >
+
+                <TextView
+                    android:id="@+id/RATE_YOUR_TXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80px"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="RATE YOUR EXPERIENCE"
+                    android:textColor="@color/white"
+                    android:textSize="33px" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/RATE_YOUR_TXT"
+                    android:layout_centerHorizontal="true"
+                    android:numStars="5"
+                    android:stepSize="1" >
+                </RatingBar>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="620px"
+                    android:layout_height="3px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="180px"
+                    android:background="#E7E9E8" />
+
+                <Button
+                    android:id="@+id/Sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="98px"
+                    android:layout_below="@+id/textView2"
+                    android:background="#0000"
+                    android:text="SUBMIT"
+                    android:textColor="@drawable/text_color_selector"
+                    android:textSize="34px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/NextView"
+                android:layout_width="match_parent"
+                android:layout_height="823px"
+                android:layout_below="@+id/RatingView" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10px" >
+
+                    <TextView
+                        android:id="@+id/What_DID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70px"
+                        android:gravity="center"
+                        android:paddingLeft="100px"
+                        android:text="W H A T  D I D N &apos; T  G O  W E L L ?"
+                        android:textColor="@color/black_pure"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/Qus1Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="100px"
+                        android:tag="mwar"
+                        android:text="A R R I V A L  T I M E"
+                        android:textColor="#8e8e8e"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/Qus2Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="100px"
+                        android:tag="mwar"
+                        android:text="F O O D  F R E S H N E S S / H O T N E S S"
+                        android:textColor="#8e8e8e"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/Qus3Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="100px"
+                        android:tag="mwar"
+                        android:text="F O O D  T A S T E"
+                        android:textColor="#8e8e8e"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/Qus4Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="100px"
+                        android:tag="mwar"
+                        android:text="F O O D  Q U A N T I T Y"
+                        android:textColor="#8e8e8e"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/Qus5Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="100px"
+                        android:tag="mwar"
+                        android:text="F O O D  P R E S E N T A T I O N"
+                        android:textColor="#8e8e8e"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/Qus6Txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="52px"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="100px"
+                        android:tag="mwar"
+                        android:text="D R I V E R  P R O F E S S I O N A L I S M"
+                        android:textColor="#8e8e8e"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="620px"
+                        android:layout_height="3px"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10px"
+                        android:background="#E7E9E8" />
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="302px"
+                        android:layout_marginTop="10px"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="OPTIONAL COMMENTS"
+                        android:paddingBottom="10px"
+                        android:paddingLeft="100px"
+                        android:paddingRight="50px"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor"
+                        android:textSize="28px" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="105px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#F9AC18"
+                    android:text="SUBMIT"
+                    android:textSize="34px" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

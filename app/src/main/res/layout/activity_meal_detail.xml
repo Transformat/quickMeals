@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutMealDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MealDetail" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/green_bar" >
+
+        <TextView
+            android:id="@+id/textViewCreateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/quick_meals_logo" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:duplicateParentState="true"
+                android:src="@drawable/back_btn_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="360px"
+       
+        android:layout_below="@+id/topBar"
+        android:background="@color/black"
+         />
+
+    <TextView
+        android:id="@+id/textViewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/imageView2"
+        android:gravity="center"
+        android:text="DETAILS"
+        android:textColor="@color/black"
+        android:textSize="40px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px"
+        android:layout_alignBottom="@+id/imageView2"
+        android:background="@drawable/gradient_listofmeal" >
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout2"
+            android:layout_marginLeft="50px"
+            android:maxLines="2"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            android:text="TextView \njkh"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:background="@color/white" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewDescription"
+            android:layout_alignRight="@+id/relativeLayout2"
+            android:gravity="right"
+            android:paddingBottom="20px"
+            android:paddingTop="20px"
+            android:text="$750.00"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewDetails" 
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20px" >
+
+            <TextView
+                android:id="@+id/textViewDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="80px"
+                android:paddingRight="80px"
+                android:text="Descriptions....."
+                android:textColor="@color/black"
+                android:textSize="32px" />
+            <View
+                android:layout_marginTop="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#ff939393"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/chef_page_click_layout"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/chef_image_detail_page"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/chef_image_detail_page"
+                    android:text="Chef name"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:id="@+id/chef_name_detail_page" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/chef_name_detail_page"
+                    android:text="Chef description"
+                    android:layout_toRightOf="@+id/chef_image_detail_page"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:id="@+id/chef_description_detail_page"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#ff939393"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDetails"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30px"
+            android:text="GC"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30px"
+            android:text="IC"
+            android:textSize="36px" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30px"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+</RelativeLayout>

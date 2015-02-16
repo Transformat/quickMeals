@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutPaymentEdit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PaymentUserEdit" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/green_bar" >
+
+        <TextView
+            android:id="@+id/textViewCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="PAYMENT"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:duplicateParentState="true"
+                android:background="@drawable/back_btn_selector" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="EDIT"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_below="@+id/topBar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20px"
+        android:background="#FAAC19"
+        android:padding="30px" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="285px"
+            android:layout_height="32px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:background="@drawable/payment_screen_logo" />
+
+        <com.creditcard.CreditCardEditText
+            android:id="@+id/editText1"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50px"
+            android:gravity="center"
+            android:hint="XXXX  XXXX  XXXX  1234"
+            android:inputType="number"
+            android:maxLength="19"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="32px" >
+        </com.creditcard.CreditCardEditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="40px"
+            android:text="EXP"
+            android:textColor="#A67410"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/editTextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/textView1"
+            android:gravity="center"
+            android:hint="MM/YY"
+            android:layout_marginLeft="10px"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="28px" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="42px"
+            android:layout_height="23px"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:layout_toRightOf="@+id/editTextMonth"
+            android:background="@drawable/usa" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="ZIP"
+            android:textColor="#A67410"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/textView2"
+            android:gravity="center"
+            android:hint="******"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="10px"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText1"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="30px"
+            android:layout_toRightOf="@+id/editText2"
+            android:hint="CVV"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="28px" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editTextMonth"
+            android:layout_marginTop="30px"
+            android:hint="PERSONAL"
+            android:paddingLeft="10px"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textCursorDrawable="@drawable/cursor"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+</RelativeLayout>

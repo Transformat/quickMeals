@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#fff"
+    tools:context=".SocialAccounts" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/green_bar" >
+
+        <TextView
+            android:id="@+id/textViewCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="SHARE"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:duplicateParentState="true"
+                android:src="@drawable/back_btn_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="800px"
+        android:layout_below="@+id/topBar" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_orange" />
+
+        <ImageView
+            android:id="@+id/message_icon"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_alignTop="@+id/fb_icon"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/fb_icon"
+            android:src="@drawable/message_icon" />
+
+        <ImageView
+            android:id="@+id/twitter_icon"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_alignTop="@+id/message_icon"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/file_icon"
+            android:src="@drawable/twitter_icon" />
+
+        <ImageView
+            android:id="@+id/fb_icon"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="60px"
+            android:layout_marginLeft="56dp"
+            android:src="@drawable/fb_icon" />
+
+        <ImageView
+            android:id="@+id/file_icon"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/twitter_icon"
+            android:layout_marginRight="64dp"
+            android:src="@drawable/file_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:gravity="center"
+        android:padding="10px"
+        android:textSize="32px"
+        android:text="TextView" />
+
+</RelativeLayout>

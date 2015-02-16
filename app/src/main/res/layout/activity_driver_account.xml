@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutDriverAccount"
+    android:layout_width="720px"
+    android:layout_height="1134px"
+    android:background="@drawable/common_bg"
+    tools:context=".DriverAccount" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/nav_bar_driver" >
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:tag="mwar"
+            android:text="Cancel"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="40px" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="Next"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="40px"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewDriverAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Driver Account"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="676px"
+        android:layout_height="59px"
+        android:layout_below="@+id/topBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:src="@drawable/step_1_driver" />
+
+    <EditText
+        android:id="@+id/editTextEmailDriver"
+        android:layout_width="676px"
+        android:layout_height="100px"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/edittext_background"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="20px"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="36px" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/textViewCustomer" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="100px" -->
+    <!-- android:layout_alignParentLeft="true" -->
+    <!-- android:layout_below="@+id/editTextPasswordDriver" -->
+    <!-- android:layout_marginTop="80px" -->
+    <!-- android:background="#fff" -->
+    <!-- android:gravity="center" -->
+
+
+    <!-- android:text="Want to register as a Customer" -->
+    <!-- android:textColor="#000" /> -->
+
+    <EditText
+        android:id="@+id/editTextPhoneDriver"
+        android:layout_width="676px"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/editTextEmailDriver"
+        android:layout_below="@+id/editTextEmailDriver"
+        android:layout_marginTop="30px"
+        android:background="@drawable/edittext_background"
+        android:hint="Mobile"
+        android:inputType="phone"
+        android:maxLength="14"
+        android:padding="20px"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="36px" />
+
+    <EditText
+        android:id="@+id/editTextPasswordDriver"
+        android:layout_width="676px"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/editTextPhoneDriver"
+        android:layout_below="@+id/editTextPhoneDriver"
+        android:layout_marginTop="30px"
+        android:background="@drawable/edittext_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20px"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="36px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextPasswordDriver"
+        android:layout_marginTop="80px"
+        android:background="#fff" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutDriver"
+            android:layout_width="500px"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/textViewCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Want to register as a Customer"
+                android:textColor="#000"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/textViewTapHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCustomer"
+                android:layout_centerHorizontal="true"
+                android:text="Tap here"
+                android:textColor="#80BD36"
+                android:textSize="32px" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50px"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="By Signing Up, you agree to the"
+            android:textColor="@color/black_pure"
+            android:textSize="36px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11" 
+             android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                
+                android:textColor="@color/black_pure"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" &amp; the"
+                android:layout_toRightOf="@+id/textViewPolicy"
+                android:textColor="@color/black_pure"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/textViewTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Terms of Service"
+                 android:layout_toRightOf="@+id/textView12"
+                android:textColor="@color/black_pure"
+                android:textSize="36px" />
+
+        </RelativeLayout>
+        <!-- Privacy Policy &amp; the Terms of Service" -->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutAddPayment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddPaymentUser" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/green_bar" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="PAYMENT"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:duplicateParentState="true"
+                android:src="@drawable/back_btn_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- <ListView -->
+    <!-- android:id="@+id/listView1" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="400px" -->
+    <!-- android:layout_below="@+id/topBar" > -->
+
+
+    <!-- </ListView> -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topBar"
+        android:layout_marginTop="80px"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/button2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:gravity="center_vertical"
+                android:paddingLeft="20px"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/uncheck_card"
+                android:tag="mwar" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/transparent_background"
+                android:text="Default"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/imageViewDelete1"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/delete_card"
+                android:tag="mwar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/button3"
+                android:layout_toRightOf="@+id/imageView3"
+                android:paddingLeft="20px"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/uncheck_card"
+                android:tag="mwar" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/transparent_background"
+                android:text="Default"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/imageViewDelete2"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/delete_card"
+                android:tag="mwar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/button4"
+                android:layout_toRightOf="@+id/imageView4"
+                android:paddingLeft="20px"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_centerVertical="true"
+                android:background="@drawable/uncheck_card"
+                android:tag="mwar" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/transparent_background"
+                android:text="Default"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <ImageView
+                android:id="@+id/imageViewDelete3"
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@drawable/delete_card"
+                android:tag="mwar" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutAdd"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="20px"
+        android:background="@color/orange_button" >
+
+        <TextView
+            android:id="@+id/textViewAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="ADD PAYMENT"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="36px"
+            android:layout_height="36px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:background="@drawable/plus_addaccount" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBar"
+        android:background="@color/white"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imageViewLoader"
+            android:layout_width="54px"
+            android:layout_height="54px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gif_loader" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="299px"
+        android:layout_height="507px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="320px"
+        android:src="@drawable/celery_android" />
+
+</RelativeLayout>

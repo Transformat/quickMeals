@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearSelected"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:background="#F9AC18" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="46px"
+            android:layout_height="54px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50px"
+            android:background="@drawable/sides_icon"
+            android:tag="mwar" />
+
+        <TextView
+            android:id="@+id/ToppingName"
+            android:layout_width="350px"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="sssssssss"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/ToppingPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="100px"
+            android:layout_alignBaseline="@+id/ToppingName"
+            android:layout_alignBottom="@+id/ToppingName"
+            android:layout_marginLeft="40px"
+            android:layout_toRightOf="@+id/ToppingName"
+            android:gravity="bottom"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+</LinearLayout>

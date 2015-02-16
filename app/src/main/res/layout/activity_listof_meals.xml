@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutListofmeal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ListofMeals" >
+
+    <!-- <ScrollView -->
+    <!-- android:id="@+id/scrollView1" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_above="@+id/LinearLayout1" > -->
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1134px"
+        layout="@layout/activity_menu_screen" />
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- <ListView -->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/LinearLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:overScrollMode="never" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <!-- </ListView> -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutOrderPlaced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96px"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/textViewOrderPlaced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your order is being processed"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="36px" />
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textViewOrderMinutes" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_below="@+id/textViewOrderPlaced" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="12 mins" -->
+<!--                 android:textAppearance="?android:attr/textAppearanceLarge" -->
+<!--                 android:textColor="@color/black_pure" -->
+<!--                 android:textSize="36px" /> -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="720px"
+            android:layout_height="120px"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutCheckOut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FAAC19" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="99px"
+                    android:layout_height="99px"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/cart_icon_on_and" />
+
+                <TextView
+                    android:id="@+id/textViewCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView5"
+                    android:gravity="center"
+                     android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="36px" 
+                    android:text="CHECKOUT" />
+
+                <TextView
+                    android:id="@+id/textViewTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutCustomize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#f6921e" >
+
+                <TextView
+                    android:id="@+id/textViewCustomize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="CUSTOMIZE"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="36px" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/hidden"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="720px"
+                android:layout_height="720px"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/carrot_android" />
+
+            <!-- <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" /> -->
+
+            <!-- <ImageView
+                android:id="@+id/imageViewLoader"
+                android:layout_width="54px"
+                android:layout_height="54px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gif_loader" /> -->
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topBarHeader"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:background="#4f000000" >
+
+        <Button
+            android:id="@+id/buttonMenu"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menu_icon_off"
+            android:padding="10px"
+            android:tag="mwar"
+            android:textColor="@drawable/text_color_selector" />
+
+        <TextView
+            android:id="@+id/textViewCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/quick_meals_logo"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+    <!-- </ScrollView> -->
+
+
+    <!-- <include -->
+    <!-- android:id="@+id/include" -->
+    <!-- android:layout_width="720px" -->
+    <!-- android:layout_height="1134px" -->
+
+
+    <!-- layout="@layout/activity_main_menu_driver" /> -->
+
+</RelativeLayout>

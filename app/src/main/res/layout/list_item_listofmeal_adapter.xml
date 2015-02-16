@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="720px"
+        android:layout_height="800px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/placeholder_item" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dish_name"
+        android:textSize="25sp"
+        android:layout_below="@+id/imageView1"
+        android:textColor="#000000"
+        android:text="Dish name"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_name"
+        android:text="Price-"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:text="$price"
+        android:layout_below="@+id/dish_name"
+        android:layout_marginLeft="110dp"
+        android:id="@+id/meal_price"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="720px"
+        android:layout_height="200px"
+        android:layout_alignBottom="@+id/imageView1"
+        android:background="@drawable/gradient_listofmeal"
+         >
+
+<!--         <ImageView -->
+<!--             android:id="@+id/imageView2" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignTop="@+id/textView1" -->
+<!--             android:src="@drawable/faded_line_1" /> -->
+
+        <TextView
+            android:id="@+id/textViewQuanty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="74px"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="200px"
+            android:layout_height="3px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewQuanty"
+            android:src="@drawable/faded_line_2" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_marginLeft="50px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:tag="mwar"
+            android:visibility="invisible"
+            android:background="@drawable/btn_minus_quantity_selector"
+             />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_marginRight="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:tag="mwar"
+            android:background="@drawable/btn_plus_quantity_selector" />
+
+       
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meal_price"
+        android:background="#ffffffff"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/chef_image"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/chef_image"
+            android:text="Chef name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:id="@+id/chef_name"
+            android:layout_marginLeft="10dp"
+
+            />
+
+<!--         <TextView -->
+<!--             android:id="@+id/textViewGC" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/textViewDescription" -->
+<!--             android:paddingLeft="50px" -->
+<!--             android:textSize="32px" -->
+<!--             android:textColor="@color/black" -->
+<!--             android:text="(GC) (IC)" /> -->
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/chef_name"
+            android:text="Chef description"
+            android:layout_toRightOf="@+id/chef_image"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:id="@+id/chef_description"
+            android:layout_marginLeft="10dp"
+
+             />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSoldOut"
+        android:layout_width="374px"
+        android:layout_height="123px"
+        android:layout_centerHorizontal="true"
+     	android:layout_marginTop="338px"
+     	android:background="@drawable/sold_out"
+     	android:visibility="gone"
+        android:text="" />
+
+    <!-- <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="95dp"
+        android:src="@drawable/gif_loader" /> -->
+
+</RelativeLayout>

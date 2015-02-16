@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sharemsgsubject">sharemsgsubject</string>
+    <string name="sharemsgbody">sharemsgbody</string>
+    <string name="sharemsglink">https://play.google.com/store/apps/details?id=com.bitekite</string>
+
+    <!-- <string name="sharepicturelink">https://uberformeal.s3.amazonaws.com/user_image/newAppiCon_80.png</string> -->
+    <string name="sharepicturelink">http://bitekite.s3.amazonaws.com/user_image/bitekite_fb_logo.png</string>
+    <string name="app_name">Quick Meals</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="AppId">737668099616024</string> <!-- 937150796301913 -->
+    <!-- <string name="MapApi">AIzaSyDg6qHFiMk1hTfWg8A8cNo414lv0bdfyZ4</string>			//Client Credentials key -->
+
+    <string name="MapApi">AIzaSyDnkkTnczE1uwSZuGs0nykeliDZH03so6E</string> <!-- //My Credentials key -->
+    <!-- qq7902  AIzaSyDWSwSdsF74GaPT6Eh_-r1lLL10KYPxV-I -->
+    <string name="EshantPC_MapApi">AIzaSyDz8QVh0C8uthWwCfpmBN7ktY2FcH8RPR8</string>
+    <string name="LiveMapApi">AIzaSyDtZ7chuhubEUF06hHlxbCCRqcVi5hyjLE</string>
+    <string name="title_activity_stripe_account">StripeAccount</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="title_activity_create_profile">CreateProfile</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_credit_card_screen">CreditCardScreen</string>
+    <string name="title_activity_driver_account">DriverAccount</string>
+    <string name="title_activity_driver_profile">DriverProfile</string>
+    <string name="title_activity_car_details">CarDetails</string>
+    <string name="title_activity_splash_screen">Quick Meals</string>
+    <string name="title_activity_address_map">AddressMap</string>
+    <string name="title_activity_address_location">AddressLocation</string>
+    <string name="title_activity_listof_meals">ListofMeals</string>
+    <string name="title_activity_meal__detail">Meal_Detail</string>
+    <string name="title_activity_meal_detail">MealDetail</string>
+    <string name="title_activity_meal_customize">MealCustomize</string>
+    <string name="title_activity_menu_screen">MenuScreen</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_account_driver">AccountDriver</string>
+    <string name="title_activity_account_user">AccountUser</string>
+    <string name="title_activity_payment_user">PaymentUser</string>
+    <string name="title_activity_payment_user_edit">PaymentUserEdit</string>
+    <string name="title_activity_support_driver">SupportDriver</string>
+    <string name="title_activity_emergency_driver">EmergencyDriver</string>
+    <string name="title_activity_support_custmore">SupportCustmore</string>
+    <string name="title_activity_order_delivered">OrderDelivered</string>
+    <string name="title_activity_pop_up">PopUp</string>
+    <string name="title_activity_check_out_customer">CheckOutCustomer</string>
+    <string name="title_activity_cust">Cust</string>
+    <string name="title_activity_address_checkout">AddressCheckout</string>
+    <string name="title_activity_change_password_customer">ChangePasswordCustomer</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_driver_location_finder">DriverLocationFinder</string>
+    <string name="title_activity_receipt">Receipt</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="title_activity_policy">Policy</string>
+    <string name="title_activity_facebookshare">FacebookShare</string>
+    <string name="title_activity_promotion">Promotion</string>
+    <string name="title_activity_share_screen">ShareScreen</string>
+    <string name="title_activity_twitter_share">TwitterShare</string>
+
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">https://play.google.com/store/apps/details?id=com.bitekite</string>
+    <string name="twitter_consumer_key">vM5RNi5CCodJnL7e5BOA</string>
+    <string name="twitter_consumer_secret">FQNS0eBbM8J5DDjDglLCwOvAUUesYhN5uFxdxjKLgk</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <!-- End Configurations -->
+
+
+    <!-- Strings used in app ui -->
+
+    <string name="hello">Hello, </string>
+    <string name="login_instructions">Login to twiter</string>
+    <string name="share_instructions">Enter share message</string>
+    <string name="btn_login">Login to Twitter</string>
+    <string name="btn_share">Share</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_example">Example</string>
+    <string name="title_activity_chef_details">ChefDetailsActivity</string>
+
+</resources>

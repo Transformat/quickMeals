@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Sarthak\.gradle\caches\modules-2\files-2.1\com.stripe\stripe-java\1.15.1\a93ce4be4cca79ab3b591eb77064fbe803d696a1\stripe-java-1.15.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a93ce4be4cca79ab3b591eb77064fbe803d696a1">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\stripe-java-1.15.1-40cea1743a5e2ebe31363d7efc35ffa10750efb5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\httpmime-4.1.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\httpmime-4.1.2-ad78391d927fed61847e54124877760ff46a3919.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\gcm.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\gcm-31e14deaba733094c3dee2ac44a08fd7b3202843.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-b8c1ff1123f9109bbaa67774e2b53a5e64a37b40.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\gson-2.2.4-bbf377a605848f4cc8bd248c36c39bb497fa74ef.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\twitter4j-core-4.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="381cf31e9200c2902782f17248d2af18e2ab4c56">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\twitter4j-core-4.0.2-c624ba23216c5a84766290fb941ddbdf4daaa82b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\signpost-core-1.2.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="47d92007ca13efd47efad1af94d842ecb5066310">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\signpost-core-1.2.1.1-c1800c5e1a922c770445ee85a14e8c32ad54f220.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\FlurryAnalytics-5.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9143ea9b390b4f6eeee3673533402669de23ab7e">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\FlurryAnalytics-5.0.0-dbfa40719a36395488be4d3fbf616ce68a84920b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\AndroidAsyncHttp.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f70e680861fdf9449819003e7799a4e9aca047f8">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\AndroidAsyncHttp-a941686d0da986629009f0295e867030a0b69855.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\exploded-aar\clicklabs-uber-for-meal-android-485c90512181\PullToRefreshLibrary\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="428f8c0e5d9dc550f2247469154425e92a8af89c">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\classes-8e515bb0977c2f3abc9f6bb3167c1153c02b2d92.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\assl_sdk_rmn (1).jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00c4477454da4ddedc3acf79190a788888eacdce">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\assl_sdk_rmn (1)-9027c67896f85bd2acb8faabc9a8682e4ff399bb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\crashlytics.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e821eafa1bf489a26bdb71f95078c26785b37a1">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\crashlytics-8955f6d9e93ae1bcd79c87b042a48dcfb7c700ef.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\classes-5b05ef387fc4975e879f46f1e618502f0b64446a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\classes-c5538a7b0f319ae41aa594c94a0ffe4f6fb533f2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\android-query-full.0.26.7 (2).jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4055bed8ed6f6aa573fa3e7d979c66101c48e182">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\android-query-full.0.26.7 (2)-c5c6abec2a4ac0495d41276142fa0009fb136b32.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\libGoogleAnalyticsServices.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="db1e65d9e3ee616f871cb23120fbea8f18ad3e4c">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\libGoogleAnalyticsServices-a6f2bc2f86e4bbfb5a6c9a3423e13e9e436cda3c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\exploded-aar\clicklabs-uber-for-meal-android-485c90512181\stripe\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e442e7a8253744b1e808757965ff50b236e605f1">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\classes-8f75136c9a238c742c1cdb99f31c5df84d953d0b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.4\129874135e6081269ace2312092031558865de12\bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.4-da73899b9e0bdcd22a1a9bb4f23abdb475a386c5.jar" />
+    </item>
+    <item
+        jar="M:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-3a1e22f2c7897aeffff94a531b983ed46ab8c29f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\image-chooser-library-1.3.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8d00d404704876b2ecbfbdfad79dfabd4b7d4cdf">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\image-chooser-library-1.3.0-b16c5954d842b5c7a1f13ee8d7f7d47aaf7bca17.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\exploded-aar\com.facebook.android\facebook\3.22.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ff4dad310131bf5b180794a5f48e29287be8572d">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\classes-0194cea4aaf372f4a1d697a8f011d5b5caff3072.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\signpost-commonshttp4-1.2.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1e6380adcb5808bfe13a934a2f35bfeed1adbc49">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\signpost-commonshttp4-1.2.1.1-d8b59fa07ccc17398667be316d30a95c94b2a22c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\libs\picasso-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="C:\Users\Sarthak\AndroidStudioProjects\clicklabs-uber-for-meal-android-485c90512181\app\build\intermediates\pre-dexed\debug\picasso-2.4.0-15d10adabc44dd901699a1e0961f0e8ccad93539.jar" />
+    </item>
+
+</items>

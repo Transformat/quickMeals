@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerformanceDriver" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1134px"
+        layout="@layout/activity_main_menu_driver" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#4890e8" >
+
+        <RelativeLayout
+            android:id="@+id/menuBtnLayout"
+            android:layout_width="100px"
+            android:layout_height="100px" >
+
+            <ImageView
+                android:id="@+id/menuImg"
+                android:layout_width="87px"
+                android:layout_height="87px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_menu_selector" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="239px"
+            android:layout_height="27px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bitekite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@drawable/ic_bg" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@drawable/shadow_down" />
+
+        <TextView
+            android:id="@+id/TodayTxt"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:text="Today"
+            android:textColor="#202020"
+            android:textSize="34px" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_below="@+id/TodayTxt"
+            android:background="@drawable/ic_detail_box" >
+
+            <TextView
+                android:id="@+id/HoursTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:text="TextView"
+                android:textColor="#8e8e8e"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/HoursPriceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="30px"
+                android:text="TextView"
+                android:textColor="#8e8e8e"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="680px"
+                android:layout_height="3px"
+                android:layout_centerInParent="true"
+                android:background="#E7E9E8"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/NumberOfOrdersTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:text="TextView"
+                android:textColor="#8e8e8e"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/OrderWisePriceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="30px"
+                android:text="TextView"
+                android:textColor="#8e8e8e"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/TotalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/relativeLayout1"
+            android:background="#A9D270" >
+
+            <TextView
+                android:id="@+id/TotalTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:text="Total"
+                android:textColor="#fff"
+                android:textSize="34px" />
+
+            <TextView
+                android:id="@+id/TotalEarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20px"
+                android:text="TextView"
+                android:textColor="#fff"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/HistoryTxt"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/TotalLayout"
+            android:gravity="center"
+            android:text="History"
+            android:textColor="#202020"
+            android:textSize="34px" />
+
+        <ExpandableListView
+            android:id="@+id/expandableListView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/HistoryTxt"
+            android:divider="@null"
+            android:groupIndicator="@null"
+            android:overScrollMode="never" >
+        </ExpandableListView>
+
+        <RelativeLayout
+            android:id="@+id/hidden"
+            android:layout_width="match_parent"
+            android:layout_height="1034px"
+            android:background="@drawable/ic_bg"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@drawable/shadow_down" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

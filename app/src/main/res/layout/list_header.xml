@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageViewBanner"
+            android:layout_width="720px"
+            android:layout_height="720px"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentTop="true" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="720px"
+            android:layout_height="200px"
+            android:layout_alignBottom="@+id/imageViewBanner"
+            android:background="@drawable/gradient_listofmeal" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:layout_above="@+id/textViewBannerContent"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="20px"
+                android:src="@drawable/faded_line_1" />
+
+            <TextView
+                android:id="@+id/textViewBannerContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="44px" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="3px"
+                android:layout_below="@+id/textViewBannerContent"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="10px"
+                android:src="@drawable/faded_line_2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewBanner"
+            android:layout_margin="20px" >
+
+            <TextView
+                android:id="@+id/textViewTodayMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/textViewTimings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewTodayMenu"
+                android:layout_centerHorizontal="true"
+                android:text="Served between"
+                android:textColor="@color/black"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout3"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="113px"
+                android:layout_height="113px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="80px"
+                android:padding="10px"
+                android:src="@drawable/mushroom_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

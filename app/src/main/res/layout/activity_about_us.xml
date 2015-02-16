@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutAboutUs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutUs" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/green_bar" >
+
+        <TextView
+            android:id="@+id/textViewCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="ABOUT"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:duplicateParentState="true"
+                android:src="@drawable/back_btn_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/topBar"
+        android:overScrollMode="never" 
+
+        android:layout_above="@+id/imageView3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="294px"
+                android:layout_height="176px"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20px"
+                android:layout_marginTop="40px"
+                android:src="@drawable/quick_meals_logo" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:padding="20px"
+                android:text="Here at Bite Kite speed is our \nspecialty. \nWe strive to provide you with \nwholesome, flavorful meals without \nkeeping you waiting. \n\nOur daily-changing menu features \nthree healthy, natural, and locally \nsourcedmeals conccted by our in- \nhouse chefs. \n\nLeave behind the hassle of \nbrowsing, order your nosh in \nseconds, and get back to business. \nWithin 15-20 minutesyour order will \nbe delivered right to your doorstep. \nThe $2 delivery fee includes \n tip. \n\nOpen for lunch Monday to Friday \nfrom 11am-3pm."
+                android:textColor="@color/black"
+                android:textSize="30px" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topBar"
+        android:background="@color/white"
+        android:visibility="visible" >
+
+               
+        <ImageView
+                android:id="@+id/imageViewLoader"
+                android:layout_width="54px"
+                android:layout_height="54px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gif_loader" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="580px"
+        android:layout_height="223px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cauliflower_android" />
+
+</RelativeLayout>

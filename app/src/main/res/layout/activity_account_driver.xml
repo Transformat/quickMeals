@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1134px"
+        layout="@layout/activity_main_menu_driver" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="#4890e8" >
+
+        <RelativeLayout
+            android:id="@+id/menuBtnLayout"
+            android:layout_width="100px"
+            android:layout_height="100px" >
+
+            <ImageView
+                android:id="@+id/menuImg"
+                android:layout_width="87px"
+                android:layout_height="87px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_menu_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/CancelTxt"
+            android:layout_width="150px"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="38px"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="239px"
+            android:layout_height="27px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bitekite" />
+
+        <TextView
+            android:id="@+id/EDIT"
+            android:layout_width="120px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="38px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="1034px"
+        android:layout_below="@+id/header"
+        android:background="@drawable/ic_bg"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@drawable/shadow_down" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/mainLinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ProfileImg"
+                    android:layout_width="220px"
+                    android:layout_height="220px"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40px" />
+
+                <TextView
+                    android:id="@+id/userNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="68px"
+                    android:layout_below="@+id/ProfileImg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20px"
+                    android:gravity="center"
+                    android:text="U S E R  N A M E"
+                    android:textColor="#202020"
+                    android:textSize="28px" />
+
+                <EditText
+                    android:id="@+id/UserNameEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_below="@+id/userNameTxt"
+                    android:background="@drawable/border"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:textColor="#202020"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="34px" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/EmailTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="68px"
+                    android:layout_below="@+id/UserNameEdt"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="E M A I L"
+                    android:textColor="#202020"
+                    android:textSize="28px" />
+
+                <EditText
+                    android:id="@+id/EmailEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_below="@+id/EmailTxt"
+                    android:background="@drawable/border"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#202020"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="34px" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/PhoneTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="68px"
+                    android:layout_below="@+id/EmailEdt"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="P H O N E  N O"
+                    android:textColor="#202020"
+                    android:textSize="28px" />
+
+                <EditText
+                    android:id="@+id/PhoneEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:layout_below="@+id/PhoneTxt"
+                    android:background="@drawable/border"
+                    android:ems="10"
+                    android:maxLength="14"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:textColor="#202020"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="34px" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/extraTextForScroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20px"
+                    android:text="" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/ChangePassword"
+            android:layout_width="fill_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:background="#4890e8"
+            android:text="Change Password"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="44px" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ChangePassword"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>

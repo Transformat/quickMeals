@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutMain"
+    android:layout_width="720px"
+    android:layout_height="1134px"
+    android:background="@drawable/main_quick_meals_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:background="@drawable/quick_meals_logo"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/SignInLayout"
+        android:layout_width="500px"
+        android:layout_height="100px"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/btn_white_border" >
+
+        <TextView
+            android:id="@+id/signInTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SIGN IN"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/signUpLayout"
+        android:layout_width="500px"
+        android:layout_height="100px"
+        android:layout_marginTop="50px"
+        android:background="@drawable/btn_white_border" >
+
+        <TextView
+            android:id="@+id/signUpTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="REGISTER"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginTop="40px" -->
+<!--         android:gravity="center" > -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/textView11" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:gravity="center" -->
+<!--             android:text="By Signing Up, you agree to the" -->
+<!--             android:textColor="@drawable/text_color_selector" -->
+<!--             android:textSize="36px" /> -->
+
+<!--         <RelativeLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_below="@+id/textView11"  -->
+<!--              android:gravity="center"> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textViewPolicy" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="Privacy Policy" -->
+                
+<!--                 android:textColor="@drawable/text_color_selector" -->
+<!--                 android:textSize="36px" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textView12" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text=" &amp; the" -->
+<!--                 android:layout_toRightOf="@+id/textViewPolicy" -->
+<!--                 android:textColor="@drawable/text_color_selector" -->
+<!--                 android:textSize="36px" /> -->
+
+<!--             <TextView -->
+<!--                 android:id="@+id/textViewTerms" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text=" Terms of Service" -->
+<!--                  android:layout_toRightOf="@+id/textView12" -->
+<!--                 android:textColor="@drawable/text_color_selector" -->
+<!--                 android:textSize="36px" /> -->
+
+<!--         </RelativeLayout> -->
+<!--         Privacy Policy &amp; the Terms of Service" -->
+<!--     </RelativeLayout> -->
+
+</LinearLayout>

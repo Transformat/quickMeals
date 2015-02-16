@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/UserNameTxt"
+        android:layout_width="310px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:text="Name\nName"
+        android:maxLines="2"
+        android:textColor="#202020"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/mealsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/UserNameTxt"
+        android:layout_below="@+id/UserNameTxt"
+        android:layout_marginTop="10px"
+        android:text="4 meals"
+        android:textColor="#8e8e8e"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/TimeTxt"
+        android:layout_width="370px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/UserNameTxt"
+        android:layout_marginRight="10px"
+        android:text="Sep 30, 2022, 03:56 PM"
+        android:gravity="left"
+        android:lineSpacingExtra="10px"
+        android:maxLines="2"
+        android:textColor="#8e8e8e"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#E7E9E8"
+        android:text="" />
+
+</RelativeLayout>

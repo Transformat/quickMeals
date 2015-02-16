@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:layout_below="@+id/TodayTxt"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/HoursTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="30px"
+        android:text="TextView"
+        android:textColor="#8e8e8e"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/HoursPriceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="30px"
+        android:text="TextView"
+        android:textColor="#8e8e8e"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="680px"
+        android:layout_height="3px"
+        android:layout_centerInParent="true"
+        android:background="#E7E9E8"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/NumberOfOrdersTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="30px"
+        android:text="TextView"
+        android:textColor="#8e8e8e"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/OrderWisePriceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="30px"
+        android:text="TextView"
+        android:textColor="#8e8e8e"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="680px"
+        android:layout_height="3px"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#E7E9E8"
+        android:text="" />
+
+</RelativeLayout>

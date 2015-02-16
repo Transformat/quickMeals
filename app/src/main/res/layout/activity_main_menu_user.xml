@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootMenuLayout"
+    android:layout_width="720px"
+    android:layout_height="1134px"
+    android:background="#0000"
+    tools:context=".MainMenuDriver" >
+
+    <LinearLayout
+        android:id="@+id/lineraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/common_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/TodayOrderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px" >
+
+            <ImageView
+                android:id="@+id/TodatOrderImg"
+                android:layout_width="38px"
+                android:layout_height="38px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/ic_launcher"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/TodatOrderTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/TodatOrderImg"
+                android:text="ORDERS"
+                android:textColor="@drawable/ic_launcher"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/DeliveredOrderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px" >
+
+            <ImageView
+                android:id="@+id/DeliveredOrderImg"
+                android:layout_width="38px"
+                android:layout_height="38px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/DeliveredOrderTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/DeliveredOrderImg"
+                android:text="DELIVERED ORDER"
+                android:textColor="@drawable/ic_launcher"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/PerformanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px" >
+
+            <TextView
+                android:id="@+id/PerformanceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/PerformanceImg"
+                android:text="PERFORMANCE"
+                android:textColor="@drawable/ic_launcher"
+                android:textSize="34px" />
+
+            <ImageView
+                android:id="@+id/PerformanceImg"
+                android:layout_width="38px"
+                android:layout_height="38px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/AccountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px" >
+
+            <TextView
+                android:id="@+id/AccountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/AccountImg"
+                android:text="ACCOUNT"
+                android:textColor="@drawable/ic_launcher"
+                android:textSize="34px" />
+
+            <ImageView
+                android:id="@+id/AccountImg"
+                android:layout_width="38px"
+                android:layout_height="38px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SupportLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px" >
+
+            <TextView
+                android:id="@+id/SupportTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/SupportImg"
+                android:text="SUPPORT"
+                android:textColor="@drawable/ic_launcher"
+                android:textSize="34px" />
+
+            <ImageView
+                android:id="@+id/SupportImg"
+                android:layout_width="38px"
+                android:layout_height="38px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/EmergencyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px" >
+
+            <TextView
+                android:id="@+id/EmergencyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/EmergencyImg"
+                android:text="EMERGENCY"
+                android:textColor="@drawable/ic_launcher"
+                android:textSize="34px" />
+
+            <ImageView
+                android:id="@+id/EmergencyImg"
+                android:layout_width="38px"
+                android:layout_height="38px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:background="@drawable/ic_launcher" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

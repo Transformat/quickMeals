@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutFooter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/addfooter"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+  <!--   <RelativeLayout
+        android:id="@+id/relativeLayoutPromoDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="80px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:gravity="center|left"
+            android:paddingLeft="20px"
+            android:text=""
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/TextViewPromoCodeDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            
+            android:layout_toLeftOf="@+id/TextView03"
+            android:layout_toRightOf="@+id/TextView02"
+            android:gravity="center|left"
+            
+            android:singleLine="true"
+            android:text="Promo Discount"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/TextViewPromoDiscountAmount"
+            android:layout_width="180px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:gravity="center|left"
+            android:paddingLeft="20px"
+            android:text="- $ 20.00"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="80px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:gravity="center|left"
+            android:paddingLeft="20px"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/TextViewDeliveryCharge"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            
+            android:layout_toLeftOf="@+id/TextView03"
+            android:layout_toRightOf="@+id/TextView04"
+            android:gravity="center|left"
+            
+            android:singleLine="true"
+            android:text="Delivery Charge "
+            android:textColor="@color/black"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/TextViewDeliveryAmount"
+            android:layout_width="180px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:gravity="center|left"
+            android:paddingLeft="20px"
+            android:text="+ $ 8.00"
+            android:textColor="@color/black"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:gravity="center|left"
+            android:paddingLeft="20px"
+            android:text=""
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            
+            android:layout_toLeftOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView1"
+            android:gravity="center|left"
+            
+            android:singleLine="true"
+            android:text="Total"
+            android:textColor="@color/black_pure"
+            android:textSize="34px" />
+
+        <TextView
+            android:id="@+id/textViewTotalAmount"
+            android:layout_width="180px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:gravity="center|left"
+            android:paddingLeft="20px"
+            android:text="$ 2000.00"
+            android:textColor="@color/black_pure"
+            android:textSize="32px" />
+    </RelativeLayout> -->
+
+</LinearLayout>

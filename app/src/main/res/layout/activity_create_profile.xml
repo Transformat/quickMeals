@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutCreateProfile"
+    android:layout_width="720px"
+    android:layout_height="1134px"
+    android:background="@drawable/common_bg"
+    tools:context=".CreateProfile" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/green_bar" >
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:tag="mwar"
+            android:text="Cancel"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="40px" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:text="Finish"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="40px"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textViewCreateProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Create a Profile"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="676px"
+        android:layout_height="59px"
+        android:layout_below="@+id/topBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:src="@drawable/transparent_background" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="676px"
+        android:layout_height="100px"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/edittext_background"
+        android:hint="Firstname"
+        android:inputType="textPersonName"
+        android:padding="20px"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="36px" >
+
+        <requestFocus />
+    </EditText>
+
+   <!--  <RelativeLayout
+        android:id="@+id/relativeLayoutLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_marginTop="30px"
+        android:background="#fff" >
+
+        <ImageView
+            android:id="@+id/imageViewLocation"
+            android:layout_width="15px"
+            android:layout_height="23px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/common_arrow" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_toLeftOf="@+id/imageViewLocation"
+            android:hint="Location"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="36px" />
+    </RelativeLayout> -->
+
+     <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="676px"
+        android:layout_height="100px"
+        android:layout_alignLeft="@+id/editTextFirstName"
+        android:layout_below="@+id/editTextFirstName"
+        android:layout_marginTop="30px"
+        android:background="@drawable/edittext_background"
+        android:hint="Lastname"
+        android:inputType="textPersonName"
+        android:padding="20px"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="36px" >
+    </EditText> 
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

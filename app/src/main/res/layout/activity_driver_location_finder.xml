@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverLocationFinder" >
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="720px"
+        android:layout_height="96px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/green_bar" >
+
+        <TextView
+            android:id="@+id/CANCEL_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20px"
+            android:gravity="center"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/CURRENT_DELIVERY_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="CURRENT DELIVERY"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+        <TextView
+            android:id="@+id/DETAILS_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="DETAILS"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="888px"
+        android:layout_below="@+id/topBar" >
+
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+    </RelativeLayout>
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/detailsLayout" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="888px" -->
+    <!-- android:layout_below="@+id/topBar" -->
+    <!-- android:background="@color/white" -->
+    <!-- android:orientation="vertical" -->
+    <!-- android:visibility="invisible" > -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="888px"
+        android:layout_below="@+id/topBar"
+        android:visibility="invisible"
+        android:background="@color/white" >
+
+        <LinearLayout
+            android:id="@+id/detailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ADDRESS_TXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:paddingLeft="20px"
+                android:text="ADDRESS"
+                android:textColor="@color/black_pure"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/ADDRESS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:background="#F1F1F1"
+                android:paddingLeft="20px"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/PHONE_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:paddingLeft="20px"
+                android:text="PHONE NO."
+                android:textColor="@color/black_pure"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/PHONE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:background="#F1F1F1"
+                android:paddingLeft="20px"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/ODRED_TXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:paddingBottom="20px"
+                android:paddingLeft="20px"
+                android:text="ORDER DETAILS"
+                android:textColor="@color/black_pure"
+                android:textSize="28px" />
+        </LinearLayout>
+    </ScrollView>
+
+   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:background="#F9AC18" >
+
+        <TextView
+            android:id="@+id/driverwill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:text="DRIVER WILL ARRIVE IN"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/driverwill"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10px"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+</RelativeLayout>

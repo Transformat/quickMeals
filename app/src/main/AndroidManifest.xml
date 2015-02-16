@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bitekite"
+    android:versionCode="105"
+    android:versionName="1.0.5" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- GCM requires a Google account. -->
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+
+    <permission
+        android:name="com.bitekite.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.bitekite.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- This app has permission to register and receive data message. -->
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+     <permission
+         android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE"
+         android:protectionLevel="signature" />
+
+     <uses-permission android:name="info.androidhive.googlemapsv2.permission.MAPS_RECEIVE" />
+    -->
+
+
+    <!-- Permission - Internet Connect -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Holo.NoActionBar" >
+
+        <!-- Facebook API ID -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/AppId" />
+
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/MapApi" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            <activity
+            android:name="com.bitekite.StripeAccount"
+            android:label="@string/title_activity_stripe_account"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".driver.OrderScreen"
+            android:label="@string/title_activity_stripe_account"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CreateAccount"
+            android:label="@string/title_activity_create_account"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CreateProfile"
+            android:label="@string/title_activity_create_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginScreen"
+            android:label="@string/title_activity_login_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+            <activity
+            android:name="com.bitekite.CreditCardScreen"
+            android:label="@string/title_activity_credit_card_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".DriverAccount"
+            android:label="@string/title_activity_driver_account"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DriverProfile"
+            android:label="@string/title_activity_driver_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CarDetails"
+            android:label="@string/title_activity_car_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+            <activity
+            android:name="com.bitekite.driver.StatusDriver"
+            android:label="@string/title_activity_car_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+            <activity
+            android:name="com.bitekite.AddressMap"
+            android:label="@string/title_activity_address_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bitekite.AddressLocation"
+            android:label="@string/title_activity_address_location"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".ListofMeals"
+            android:label="@string/title_activity_listof_meals"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MealDetail"
+            android:label="@string/title_activity_meal_customize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+            <activity
+            android:name="com.bitekite.MealCustomize"
+            android:label="@string/title_activity_meal_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <!--
+            <activity
+            android:name="com.bitekite.MenuScreen"
+            android:label="@string/title_activity_menu_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bitekite.driver.MainMenuDriver"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".driver.History"
+            android:label="@string/title_activity_history"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".driver.PerformanceDriver"
+            android:label="@string/title_activity_account_driver"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AccountUser"
+            android:label="@string/title_activity_account_user"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".AddPaymentUser"
+            android:label="@string/title_activity_payment_user"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PaymentUserEdit"
+            android:label="@string/title_activity_payment_user_edit"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".driver.AccountDriver"
+            android:label="@string/title_activity_account_driver"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".driver.SupportDriver"
+            android:label="@string/title_activity_support_driver"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".driver.EmergencyDriver"
+            android:label="@string/title_activity_emergency_driver"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+            <activity
+            android:name="com.bitekite.SupportCustmore"
+            android:label="@string/title_activity_support_custmore"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".driver.OrderDelivered"
+            android:label="@string/title_activity_order_delivered"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+            <activity
+            android:name="com.bitekite.driver.PopUp"
+            android:label="@string/title_activity_pop_up"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        -->
+        <receiver android:name=".driver.BootCompletedReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".driver.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        <service
+            android:name=".MyServiceCust"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name=".GCMIntentService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <!-- Receives the registration id. -->
+
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.bitekite" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".utils.LocationReceiverBackground" />
+
+        <activity
+            android:name=".CheckOutCustomer"
+            android:label="@string/title_activity_check_out_customer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name=".Cust"
+            android:label="@string/title_activity_cust"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddressCheckout"
+            android:label="@string/title_activity_address_checkout"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChangePasswordCustomer"
+            android:label="@string/title_activity_change_password_customer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".driver.ChangePassword"
+            android:label="@string/title_activity_change_password"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".DriverLocationFinder"
+            android:label="@string/title_activity_driver_location_finder"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Receipt"
+            android:label="@string/title_activity_receipt"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="a6a2075e0c0ae065c8365b0959275dcb4275ce67" />
+
+        <activity
+            android:name=".ForgotPassword"
+            android:label="@string/title_activity_forgot_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Policy"
+            android:label="@string/title_activity_policy"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+            <activity
+            android:name="com.bitekite.FacebookShare"
+            android:label="@string/title_activity_facebookshare"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".Promotion"
+            android:label="@string/title_activity_promotion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name=".ShareScreen"
+            android:label="@string/title_activity_share_screen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="tumblrdemo-bitekite" />
+            </intent-filter>
+        </activity>
+        <!--
+            <activity
+            android:name="com.bitekite.TwitterShare"
+            android:label="@string/title_activity_twitter_share"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.bitekite.WebViewActivity"
+            android:label="@string/title_activity_web_view"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.bitekite.Example"
+            android:label="@string/title_activity_example"
+            android:screenOrientation="portrait">
+        </activity>
+        -->
+        <activity
+            android:name=".ChefDetailsActivity"
+            android:label="@string/title_activity_chef_details" >
+        </activity>
+    </application>
+
+</manifest>

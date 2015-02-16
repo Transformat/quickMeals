@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topping_item"
+    android:layout_width="360px"
+    android:layout_height="700px"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="360px"
+        android:layout_height="380px"
+         >
+
+        <ImageView
+            android:id="@+id/toopingImg"
+            android:layout_width="360px"
+            android:layout_height="380px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_listofmeal" >
+
+            <TextView
+                android:id="@+id/PriceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="150px"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginRight="20px"
+               android:gravity="bottom"
+                android:text="$50"
+                android:padding="20px"
+                android:textColor="@color/white"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/selecetItemImg"
+            android:layout_width="54px"
+            android:layout_height="54px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="20px"
+            android:src="@drawable/side_check_icon"
+            android:tag="mwar"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutShadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gradient_listofmeal"
+            android:visibility="invisible" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ToppingName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginRight="60px"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/ToppingDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="10px"
+        android:text="TextView"
+        android:textSize="30px" />
+
+</LinearLayout>

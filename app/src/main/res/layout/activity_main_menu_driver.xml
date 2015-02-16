@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootMenuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainMenuDriver" >
+
+    <Button
+        android:layout_width="120px"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shadow_l" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shadow_d" />
+
+    <Button
+        android:layout_width="120px"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shadow_r" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shadow_t" />
+
+    <LinearLayout
+        android:id="@+id/menuView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/quick_meals_logo" />
+
+        <RelativeLayout
+            android:id="@+id/TodayOrderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="100px"
+            android:background="@drawable/menulayout_selector" >
+
+            <TextView
+                android:id="@+id/TodayOrderTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:text="TODAY&apos;S SCHEDULE"
+                android:textColor="@drawable/menutext_color_selector"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/DeliveredOrderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/menulayout_selector" >
+
+            <TextView
+                android:id="@+id/DeliveredOrderTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:text="ORDER HISTORY"
+                android:textColor="@drawable/menutext_color_selector"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/PerformanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/menulayout_selector" >
+
+            <TextView
+                android:id="@+id/PerformanceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:text="BILLING HISTORY"
+                android:textColor="@drawable/menutext_color_selector"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/AccountLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/menulayout_selector" >
+
+            <TextView
+                android:id="@+id/AccountTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:text="ACCOUNT"
+                android:textColor="@drawable/menutext_color_selector"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SupportLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/menulayout_selector" >
+
+            <TextView
+                android:id="@+id/SupportTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:text="SUPPORT"
+                android:textColor="@drawable/menutext_color_selector"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/EmergencyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/menulayout_selector" >
+
+            <TextView
+                android:id="@+id/EmergencyTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:text="EMERGENCY"
+                android:textColor="@drawable/menutext_color_selector"
+                android:textSize="34px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/CheckOutLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/menulayout_selector" >
+
+            <TextView
+                android:id="@+id/CheckOutTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:text="CHECK OUT"
+                android:textColor="@drawable/menutext_color_selector"
+                android:textSize="34px" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/LogoutLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@drawable/menulayout_selector" >
+
+            <TextView
+                android:id="@+id/LogoutTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20px"
+                android:text="LOGOUT"
+                android:textColor="@drawable/menutext_color_selector"
+                android:textSize="34px" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
